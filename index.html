@@ -5,26 +5,41 @@
     <title>Fortune Teller</title>
    
   </head>
+      <style>
+        h1 {color: green}
+        h2 {color: Orange}
+        body {
+  background-image: url("https://www.projectcontrolacademy.com/wp-content/uploads/2016/04/projects-fortuneteller.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+           }
+</style>
   <body>
     <h1>FORTUNE TELLER</h1>
-      <p Id="Fortune">
+      <p Id="Fortune" style="color:green;">
         <b>Ready To See Your Fortune?</b>
       </p>
          <form action="Fortuneteller" method="get">
-         First name: <input type="text" name="fname" id="fname"><br/>
-         Last name: <input type="text" name="lname" id="lname"><br/>
-         Number of Kids: <input type="text" name="numkids" id="numkids"><br/>
-         Partner: <input type="text" name="partner" id="partner"><br/>
-         Title: <input type="text" name="title" id="title"><br/>
-         <input type="button" value="Submit" onclick="ft()">
-         
+            <label for="fname" style="color:white">First name:</label>
+            <input type="text" name="fname" id="fname"><br/>
+            <label for="lname" style="color:white">Last name:</label>
+            <input type="text" name="lname" id="lname"><br/>
+            <label for="numkids" style="color:white">Number of Kids:</label>
+            <input type="text" name="numkids" id="numkids"><br/>
+            <label for="partner" style="color:white">Partner:</label>
+            <input type="text" name="partner" id="partner"><br/>
+            <label for="title" style="color:white">Title:</label>
+            <input type="text" name="title" id="title"><br/>
+            <input type="button" value="Submit" onclick="ft()">
+            
+    <h2>By:Kevin Jiang and Xavier Abreu    
     <script type="text/javascript">
        
        function ft() {
-            document.getElementById("Fortune").innerHTML = document.getElementById("fname").value + document.getElementById("lname").value + " you will have " + document.getElementById("numkids").value + " kids" + " and you will be with " + document.getElementById("partner").value + " working as an " + document.getElementById("title").value + "!";
+            document.getElementById("Fortune").innerHTML = document.getElementById("fname").value + document.getElementById("lname").value + " you will have " + document.getElementById("numkids").value + " kids" + " and you will be with " + document.getElementById("partner").value + " working as an " + document.getElementById("title").value + "!"; 
        }
+       
     </script>
-      
-
-  </body>
+   </body>
 </html>
